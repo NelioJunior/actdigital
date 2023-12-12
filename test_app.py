@@ -14,13 +14,11 @@ class TestPrevisaoTempo(unittest.TestCase):
         with self.app.test_request_context('/previsao', method='POST', json={'cidade': 'Sao Paulo'}):
             response = obter_previsao_tempo()
             self.assertEqual(response.status_code, 200)
-            # Adicione mais asserções conforme necessário
 
     def test_historico(self):
         with self.app.test_request_context('/historico', method='GET'):
             response = historico()
             self.assertEqual(response.status_code, 200)
-            # Adicione mais asserções conforme necessário
 
 if __name__ == '__main__':
     unittest.main()

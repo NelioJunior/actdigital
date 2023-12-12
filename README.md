@@ -37,6 +37,17 @@ Dentro do terminal, apos ativado o ambiente virtual dentro da pasta actdigital e
 ## Historico de consutas 
 Após a execução bem-sucedida da aplicação, você pode acessar a API usando o endpoint /previsao para obter a previsão do tempo com base na cidade fornecida. Além disso, o histórico das consultas é acessível através do endpoint /historico.
 
+## Testes automatizados 
+Para facilitar os testes foi desenvolvido um script chamado test_app.py, porem para a execucao deste e' necessario instalar a library pytest atraves do comando:
+
+    pip install pytest
+
+Apos a instacao da library executar: 
+    
+    pytest test_app.py
+
+Durante a execucao do script test_app.py na ocorrencia de algum erro, proceder a correcao segundo as mensagens emitidas apos o teste 
+
 ## Observação
 
 _Lembre-se de que o histórico das consultas é armazenado em um banco de dados MongoDB. Certifique-se de ter um servidor MongoDB em execução para acessar o histórico_
