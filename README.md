@@ -37,7 +37,7 @@ Dentro do terminal, apos ativado o ambiente virtual dentro da pasta actdigital e
 ## Historico de consutas 
 Após a execução bem-sucedida da aplicação, você pode acessar a API usando o endpoint /previsao para obter a previsão do tempo com base na cidade fornecida. Além disso, o histórico das consultas é acessível através do endpoint /historico.
 
-## Observação:
+## Observação
 
 _Lembre-se de que o histórico das consultas é armazenado em um banco de dados MongoDB. Certifique-se de ter um servidor MongoDB em execução para acessar o histórico_
 
