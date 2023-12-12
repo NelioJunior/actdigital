@@ -18,20 +18,21 @@ No Windows (PowerShell):
 
     pip install -r requirements.txt
 
-    Configuração da Chave da API do OpenWeatherMap
-    Antes de executar a aplicação, é necessário obter uma chave de API gratuita do OpenWeatherMap. Siga as instruções na página de inscrição para criar uma conta e obter sua chave.
+# Configuração da Chave da API do OpenWeatherMap
+Antes de executar a aplicação, é necessário obter uma chave de API gratuita do OpenWeatherMap. Siga as instruções na página de inscrição para criar uma conta e obter sua chave.
 
-    Depois de obter a chave, defina-a como uma variável de ambiente. No Linux, você pode fazer isso usando o comando export no terminal:
-        export OPENWEATHER_API_KEY=sua-chave-openweather
+Depois de obter a chave, defina-a como uma variável de ambiente. No Linux, você pode fazer isso usando o comando export no terminal:
 
-    Execução da Aplicação
-    Agora que o ambiente está configurado e a chave da API do OpenWeatherMap está definida, você pode executar a aplicação Flask. Certifique-se de estar no ambiente virtual e execute:
+    export OPENWEATHER_API_KEY=sua-chave-openweather
+
+Execução da Aplicação
+Agora que o ambiente está configurado e a chave da API do OpenWeatherMap está definida, você pode executar a aplicação Flask. Certifique-se de estar no ambiente virtual e execute:
 
 ## Utilizando a API
 
-    Após a execução bem-sucedida da aplicação, você pode acessar a API usando o endpoint /previsao para obter a previsão do tempo com base na cidade fornecida. Além disso, o histórico das consultas é acessível através do endpoint /historico.
+Após a execução bem-sucedida da aplicação, você pode acessar a API usando o endpoint /previsao para obter a previsão do tempo com base na cidade fornecida. Além disso, o histórico das consultas é acessível através do endpoint /historico.
 
 ## Observação:
 
-    _Lembre-se de que o histórico das consultas é armazenado em um banco de dados MongoDB. Certifique-se de ter um servidor MongoDB em execução para acessar o histórico._
+_Lembre-se de que o histórico das consultas é armazenado em um banco de dados MongoDB. Certifique-se de ter um servidor MongoDB em execução para acessar o histórico_
 
