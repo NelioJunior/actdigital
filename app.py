@@ -36,33 +36,33 @@ def limpar_banco():
 
 @app.route('/inserir_ficticios', methods=['GET'])
 def inserir_registros_ficticios():
-	regioes = ['Lisbon', 'Berlin', 'Paris', 'New York', 'Tokyo', 'Sydney', 'Rio de Janeiro', 'Cape Town', 'Moscow', 'Beijing']
+        regioes = ['Lisbon', 'Berlin', 'Paris', 'New York', 'Tokyo', 'Sydney', 'Rio de Janeiro', 'Cape Town', 'Moscow', 'Beijing']
 
-	collection.delete_many({})
+        collection.delete_many({})
 
-	for regiao in regioes:
-		previsao_data = obter_previsao_api(regiao)
-		if previsao_data:
-			registro = {
-				'regiao': regiao,
-				'previsao': previsao_data,
-				'timestamp': datetime.now()
-			}
-			collection.insert_one(registro)
+        for regiao in regioes:
+                previsao_data = obter_previsao_api(regiao)
+                if previsao_data:
+                        registro = {
+                                'regiao': regiao,
+                                'previsao': previsao_data,
+                                'timestamp': datetime.now()
+                        }
+                        collection.insert_one(registro)
 
-	print('Registros fictícios inseridos com sucesso!')
+        print('Registros fictícios inseridos com sucesso!')
 
 
 
 @app.route('/imprimir_dados', methods=['GET'])
 def imprimir_dados_mongodb():
-	for documento in collection.find():
-		print(f"Região: {documento['regiao']}")
-		print(f"Previsão: {documento['previsao']}")
-		print(f"Timestamp: {documento['timestamp']}")
-		print("\n")
+        for documento in collection.find():
+                print(f"Região: {documento['regiao']}")
+                print(f"Previsão: {documento['previsao']}")
+                print(f"Timestamp: {documento['timestamp']}")
+                print("\n")
 
-	print('message','Dados impressos com sucesso!')
+        print('message','Dados impressos com sucesso!')
 
 
 if __name__ == '__main__':
