@@ -1,6 +1,6 @@
 # ACT Digital - Previsão do Tempo
 
-Este projeto consiste em uma aplicação de backend desenvolvida em Python utilizando o framework Flask para fornecer dados da previsão do tempo com base na API do OpenWeatherMap. Antes de executar a API, é necessário seguir alguns passos:
+Este projeto consiste em uma aplicação de backend desenvolvida em Python utilizando o mini-framework Flask para fornecer dados da previsão do tempo com base na API do OpenWeatherMap. Antes de executar a API, é necessário seguir alguns passos:
 
 ## Requisitos Iniciais
 
