@@ -18,7 +18,7 @@ No Windows (PowerShell):
 
     pip install -r requirements.txt
 
-# Configuração da Chave da API do OpenWeatherMap
+## Configuração da Chave da API do OpenWeatherMap
 Antes de executar a aplicação, é necessário obter uma chave de API gratuita do OpenWeatherMap. Siga as instruções na página de inscrição para criar uma conta e obter sua chave.
 
 Depois de obter a chave, defina-a como uma variável de ambiente. No Linux, você pode fazer isso usando o comando export no terminal:
