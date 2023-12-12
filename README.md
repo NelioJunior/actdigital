@@ -30,6 +30,11 @@ Agora que o ambiente está configurado e a chave da API do OpenWeatherMap está 
 
 ## Utilizando a API
 
+Dentro do terminal, apos ativado o ambiente virtual dentro da pasta actdigital executar:
+
+    python weather_app.py 
+
+## Historico de consutas 
 Após a execução bem-sucedida da aplicação, você pode acessar a API usando o endpoint /previsao para obter a previsão do tempo com base na cidade fornecida. Além disso, o histórico das consultas é acessível através do endpoint /historico.
 
 ## Observação:
